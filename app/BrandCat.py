@@ -27,7 +27,7 @@ def validate(prompt:str) -> bool:
 
 def generate_keywords(prompt: str) ->  str:
   # load API keys
-  openai.api_key = "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"
+  openai.api_key = "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"
   enriched_prompt = f"Generate branding keywords for {prompt}"
   print(enriched_prompt)
   response = openai.Completion.create(
@@ -57,7 +57,7 @@ def generate_keywords(prompt: str) ->  str:
   
 def generate_branding_snippet(prompt: str) -> str:
   # load API keys
-  openai.api_key = "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"
+  openai.api_key = "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"
   enriched_prompt = f"Generate branding snippet for {prompt}"
   print(enriched_prompt)
   response = openai.Completion.create(

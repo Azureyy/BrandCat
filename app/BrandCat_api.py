@@ -1,7 +1,9 @@
 from fastapi import FastAPI,HTTPException
 from BrandCat import generate_keywords, generate_branding_snippet
-app = FastAPI()
+from mangum import Mangum
 
+app = FastAPI()
+handler = Mangum(app)
 MAX_INPUT_LENGTH = 32
 
 @app.get("/generate_snippet")
